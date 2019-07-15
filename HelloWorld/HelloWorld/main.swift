@@ -417,3 +417,51 @@ let optionalSquare: Square? = nil
 
 let squareArea = optionalSquare?.area()
 print("squareArea = \(squareArea ?? 0)")
+
+/* 枚举和结构体 */
+
+/**
+ * 枚举
+ * 和
+ * 结构体
+**/
+
+/* 枚举 */
+enum Rank: Int {
+    case ace = 1
+    case two, three, four, five, six, seven, eight, nine, ten
+    case jack, queue, king
+    
+    func simpleDescription() -> String {
+        switch self {
+        case .ace:
+            return "ace"
+        case .jack:
+            return "jack"
+        case .queue:
+            return "queue"
+        case .king:
+            return "king"
+        default:
+            return String(self.rawValue)
+        }
+    }
+}
+
+let ace = Rank.ace
+let aceRawValue = ace.rawValue
+print("raw value: \(aceRawValue), text: \(ace.simpleDescription())")
+
+func RankGreaterThan(x: Rank, y: Rank) -> Bool {
+    return (x.rawValue > y.rawValue)
+}
+
+let x = Rank.eight
+let y = Rank.ten
+let greaterThan = RankGreaterThan(x: x, y: y)
+if (true == greaterThan) {
+    print("x > y")
+} else {
+    print("x <= y")
+}
+/* 结构体 */
