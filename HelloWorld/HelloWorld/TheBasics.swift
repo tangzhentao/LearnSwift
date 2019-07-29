@@ -19,6 +19,11 @@ class TheBasics {
         self.IntegerConver()
         
         self.learnTuples()
+        
+        self.learnErrorHandling()
+        
+//        self.learnAssertion()
+        self.learnPreconditions()
     }
     
     // 整数类型转换
@@ -53,6 +58,89 @@ class TheBasics {
         let http200status = (statusCode: 200, message: "success")
         // 使用值的名字访问
         print("status: \(http200status.statusCode), message: \(http200status.message)")
+    }
+    
+    /* 错误处理 -- 开始 */
+    func learnErrorHandling () {
+        
+        for cond in 0 ... 2 {
+            do {
+                try self.makeSandwich(condition: cond)
+            } catch {
+                print("error occurred: \(error)")
+            }
+        }
+        
+        for cond in 0 ... 2 {
+            do {
+                try self.makeSandwich(condition: cond)
+            } catch MakeSandwichError.NoCleanDishes{
+                print("No clean dished, go to wash dishes.")
+            } catch MakeSandwichError.NoButter {
+                print("No butter, go to buy butter.")
+            } catch {
+                print(error)
+            }
+        }
+        
+    }
+    
+    enum MakeSandwichError: Error {
+        case NoCleanDishes
+        case NoButter
+    }
+    
+    func makeSandwich(condition: Int) throws {
+        
+        defer {
+            print("have a break")
+        }
+        
+        if condition == 1 {
+            throw MakeSandwichError.NoCleanDishes
+        } else if condition == 2 {
+            throw MakeSandwichError.NoButter
+        } else {
+            print("wow, did make a delicious sandwich!")
+        }
+    }
+    /* 错误处理 -- 结束 */
+    
+    // 断言
+    func learnAssertion () {
+        
+        /*
+         下面的代码在debug模式下会报错，但release模式下不会报错
+         */
+        let age = -3
+        
+        assert(age > 0) // Assertion failed: ...
+        assert(age > 0, "age can not be negative.") // Assertion failed: ...
+        
+        if age <= 0 {
+            assertionFailure("you know, age can not be negative.") // Fatal error: ...
+        }
+    }
+    
+    func learnPreconditions() -> Void {
+        /*
+         下面的代码在debug和release模式下都会停止运行，
+         但debug下会有详细的错误信息，而release模式下没有
+         */
+        let index = 1
+        precondition(index > 0) // Preconditon failed: ...
+        precondition(index > 0, "index must be greater than 0.") // Preconditon failed: ...
+        
+        if index <= 0 {
+            preconditionFailure("you konw, index must be greater than 0") // Fatal error: ...
+        }
+        
+        /*
+         下面的代码在debug和release模式下表现一直：都会打印详细的错误信息
+         */
+        fatalError() // Fatal error: ...
+        fatalError("terrible") // Fatal error: ...
+        
     }
     
 }
