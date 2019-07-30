@@ -23,7 +23,7 @@ class TheBasics {
         self.learnErrorHandling()
         
 //        self.learnAssertion()
-        self.learnPreconditions()
+//        self.learnPreconditions()
     }
     
     // 整数类型转换

@@ -306,3 +306,7 @@ do {
 let theBasics = TheBasics()
 theBasics.test();
 
+let basicOperators = BasicOperators()
+basicOperators.learn()
+
+
