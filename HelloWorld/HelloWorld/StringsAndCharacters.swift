@@ -167,6 +167,45 @@ class StringsAndCharacters {
         print(newString)
     }
     
+    // 字符串的Unicode表示形式
+    func learnUnicodeRepresentionsOfStrings () {
+        let dogString = "Dog‼🐶"
+        let utf8 = dogString.utf8
+        let utf16 = dogString.utf16
+        let unicodeScalars = dogString.unicodeScalars
+        
+
+        print("utf8: \(utf8)")
+        print("utf16: \(utf16)")
+        print("utf32: \(unicodeScalars)")
+
+        print("dogString length: \(dogString.count), utf8 lenght: \(utf8.count), utf16 lenght: \(utf16.count), unicodeScalars lenght: \(unicodeScalars.count)")
+        
+        for codeUnit in utf8 {
+            print("\(codeUnit) ", terminator: "")
+        }
+        print("")
+        
+        for codeUnit in utf16 {
+            print("\(codeUnit) ", terminator: "")
+        }
+        print("")
+        
+        for codeUnitScalar in unicodeScalars {
+            print("\(codeUnitScalar.value) ", terminator: "")
+        }
+        print("")
+        
+        for codeUnitScalar in unicodeScalars {
+            print("\(codeUnitScalar) ", terminator: "")
+        }
+        print("")
+        print("")
+
+        
+        
+    }
+    
     func learn () {
         //
         self.learnStringIiterals()
@@ -182,5 +221,7 @@ class StringsAndCharacters {
         self.learnInsertAndRemove()
         
         self.learnSubString()
+        
+        self.learnUnicodeRepresentionsOfStrings()
     }
 }
