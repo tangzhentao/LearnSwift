@@ -309,4 +309,7 @@ theBasics.test();
 let basicOperators = BasicOperators()
 basicOperators.learn()
 
+let stringAndCharacters = StringsAndCharacters()
+stringAndCharacters.learn()
+
 

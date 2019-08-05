@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2429A67A22EDFD8C00E181FF /* SwiftTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2429A67922EDFD8C00E181FF /* SwiftTour.swift */; };
 		2431B27822C727BB00D8CD1C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2431B27722C727BB00D8CD1C /* main.swift */; };
+		244B9C1222F5D0420097B990 /* StringsAndCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244B9C1122F5D0420097B990 /* StringsAndCharacters.swift */; };
 		244DE3A522ED20BF007CA80A /* TheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244DE3A422ED20BF007CA80A /* TheBasics.swift */; };
 		2451659C22F09409001BE681 /* BasicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2451659B22F09409001BE681 /* BasicOperators.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		2429A67922EDFD8C00E181FF /* SwiftTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTour.swift; sourceTree = "<group>"; };
 		2431B27422C727BB00D8CD1C /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		2431B27722C727BB00D8CD1C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		244B9C1122F5D0420097B990 /* StringsAndCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndCharacters.swift; sourceTree = "<group>"; };
 		244DE3A422ED20BF007CA80A /* TheBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBasics.swift; sourceTree = "<group>"; };
 		2451659B22F09409001BE681 /* BasicOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOperators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 				2429A67922EDFD8C00E181FF /* SwiftTour.swift */,
 				244DE3A422ED20BF007CA80A /* TheBasics.swift */,
 				2451659B22F09409001BE681 /* BasicOperators.swift */,
+				244B9C1122F5D0420097B990 /* StringsAndCharacters.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 				2451659C22F09409001BE681 /* BasicOperators.swift in Sources */,
 				244DE3A522ED20BF007CA80A /* TheBasics.swift in Sources */,
 				2429A67A22EDFD8C00E181FF /* SwiftTour.swift in Sources */,
+				244B9C1222F5D0420097B990 /* StringsAndCharacters.swift in Sources */,
 				2431B27822C727BB00D8CD1C /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
