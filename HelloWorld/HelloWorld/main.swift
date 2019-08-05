@@ -306,3 +306,10 @@ do {
 let theBasics = TheBasics()
 theBasics.test();
 
+let basicOperators = BasicOperators()
+basicOperators.learn()
+
+let stringAndCharacters = StringsAndCharacters()
+stringAndCharacters.learn()
+
+
