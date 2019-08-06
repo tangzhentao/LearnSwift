@@ -248,6 +248,87 @@ class ControlFlow {
         }
     }
     
+    func learnfallthrough () {
+        let integerToDescribe = 5
+        var description = "The number \(integerToDescribe) is "
+        switch integerToDescribe {
+        case 2, 3, 5, 7, 11:
+            description += " a prime number, and also "
+            fallthrough
+        default:
+            description += "an integer."
+        }
+        
+        print(description)
+    }
+    
+    /*
+     蛇和梯子的游戏
+     修改一下赢的规则：
+     刚好落在25上才算赢，如果超过了25就重新掷骰子，直到落到25为止
+     */
+    func snakesAndLaddersGame3 () {
+        
+        var square = 0
+        var diceroll = 0
+        let finalSquare = 25
+        var board = Array(repeating: 0, count: finalSquare + 1)
+        board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
+        board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
+        
+        gameLoop: while square != finalSquare {
+            diceroll += 1
+            if diceroll > 6 {
+                diceroll = 1
+            }
+            
+            let original = square
+            let midle = square + diceroll
+            var additon = 0
+
+            switch midle {
+            case finalSquare:
+                // 骰子数刚好使玩家移动到最终的方格里，游戏结束。
+                print("roll dice: \(diceroll), from \(original) to \(midle), addtion: \(additon), final: \(midle)")
+                break gameLoop
+            case let value where value > finalSquare:
+                // 骰子数将会使玩家的移动超出最后的方格，那么这种移动是不合法的，玩家需要重新掷骰子
+                print("roll dice: \(diceroll), from \(original) to \(midle), addtion: \(additon), final: \(midle)")
+                continue gameLoop
+            default:
+                // 合法移动，做正常的处理
+                square = midle
+                additon = board[square]
+                square += board[square]
+            }
+            
+            print("roll dice: \(diceroll), from \(original) to \(midle), addtion: \(additon), final: \(square)")
+        }
+        print("game over")
+        
+    }
+    
+    func learnGuard () {
+        self.greet(person: ["name" : "Jobs"])
+        self.greet(person: ["name" : "Tom", "location" : "New York"])
+
+    }
+    
+    func greet(person: [String:String]) {
+        guard let name = person["name"] else {
+            return
+        }
+        
+        print("hello, \(name)!")
+        
+        guard let location = person["location"] else {
+            print("I hope the wether is nice near you.")
+            return
+        }
+        
+        print("I hope the wether is nice in \(location).")
+    }
+    
     func learn() {
         self.learnForInLoops()
         
@@ -263,7 +344,10 @@ class ControlFlow {
         
         self.learnSwithWithCompoundAndBindValues()
 
+        self.learnfallthrough()
         
+        self.snakesAndLaddersGame3()
         
+        self.learnGuard()
     }
 }
