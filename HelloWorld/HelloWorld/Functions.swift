@@ -16,6 +16,10 @@ class Functions {
         print("hello, \(person)")
     }
     
+    func greet(human: String) -> Void {
+        print("hello, \(human)")
+    }
+    
     func greet() -> Void {
         print("Hello !")
     }
@@ -126,6 +130,18 @@ class Functions {
         var average = sum / Double(count)
         print("\(numbers) average is \(average)")
     }
+    
+    // 默认情况下，参数时常量，修改会报编译错误
+    func testParameterIsConstant (x: Int) {
+//        x = 2 // 报编译错误
+    }
+    
+    // 输入输出参数
+    func swap(x: inout Int, y: inout Int) {
+        let middle = x
+        x = y
+        y = middle
+    }
 
     func learn() {
         
@@ -165,6 +181,13 @@ class Functions {
         
         self.average(numbers: 1, 2, 3, 4)
         self.average()
+        
+        var a = 10
+        var b = 22
+        print("before swap: a = \(a), b = \(b)")
+        self.swap(x: &a, y: &b)
+        print("after swap: a = \(a), b = \(b)")
+
 
     }
 }
