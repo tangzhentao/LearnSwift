@@ -329,6 +329,16 @@ class ControlFlow {
         print("I hope the wether is nice in \(location).")
     }
     
+    func learnAvailable () {
+        
+        if #available(iOS 10, OSX 10.14.4, *) {
+            // 如果环境是 iOS 10及以上或者OSX 10.14.4及以上 或者其他平台(如，tvOS、watchOS等)，则执行这个分支
+            print("this statement only execuate on iOS 10 and higher")
+        } else {
+            print("not iOS 10 and higher")
+        }
+    }
+    
     func learn() {
         self.learnForInLoops()
         
@@ -349,5 +359,7 @@ class ControlFlow {
         self.snakesAndLaddersGame3()
         
         self.learnGuard()
+        
+        self.learnAvailable()
     }
 }

@@ -313,3 +313,5 @@ let stringAndCharacters = StringsAndCharacters()
 stringAndCharacters.learn()
 
 ControlFlow().learn()
+
+Functions().learn()
