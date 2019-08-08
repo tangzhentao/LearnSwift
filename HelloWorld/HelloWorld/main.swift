@@ -303,6 +303,7 @@ do {
     print(error)
 }
 
+/*
 let theBasics = TheBasics()
 theBasics.test();
 
@@ -315,3 +316,6 @@ stringAndCharacters.learn()
 ControlFlow().learn()
 
 Functions().learn()
+ */
+
+Closures().learn()
