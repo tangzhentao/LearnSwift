@@ -64,6 +64,69 @@ class Closures {
         print(reversedNames)
     }
     
+    // 使用尾随闭包形式
+    func useTrailingCloure () {
+        print("use closure to sort, which use trailing closure 1")
+        let names = ["zhang san", "a da", " li si", "wang wu", "niu er", "qian jin", "song liu", "cao cao"]
+        let reversedNames = names.sorted() { $0 > $1}
+        print(reversedNames)
+        print("use closure to sort, which use trailing closure 2")
+        let reversedNames2 = names.sorted { $0 > $1}
+        print(reversedNames2)
+    }
+    
+    // 使用尾随闭包形式，例子2
+    func useTrailingClosure2 () {
+        
+        let digitNames = [0: "Zero", 1: "One", 2: "Two", 3: "Three", 4: "Four",
+                          5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"]
+        
+        let digits = [0, 7, 16, 25, 38, 99, 66, 365]
+        let strings = digits.map { (digit) -> String in
+            
+            var num = digit
+            var output  = ""
+            
+            repeat {
+                let mod = num % 10
+                let name = digitNames[mod]
+                if name != nil {
+                    output = name! + output
+                }
+                
+                num /= 10
+            } while num > 0
+            
+            return output
+        }
+        
+        print(digits)
+        print(strings)
+        
+    }
+    
+    // 值捕获
+    func learnCaptureValues () {
+        
+        let incrementer = makeIncrementer(forIncrement: 2)
+        print("incrementer: \(incrementer())")
+        print("incrementer: \(incrementer())")
+        print("incrementer: \(incrementer())")
+        print("incrementer: \(incrementer())")
+
+    }
+    
+    func makeIncrementer (forIncrement amout: Int) -> ()->Int {
+        var runningTotal = 0
+        func incrementer() -> Int {
+            runningTotal += amout
+            return runningTotal
+        }
+
+        
+        return incrementer
+    }
+    
     func learn() {
         self.useBackward()
         
@@ -74,5 +137,11 @@ class Closures {
         useClosureExpressionOmittingParameterAndReturnType ()
 
         useClosureExpressWithShorthandArgumentNames ()
+        
+        useTrailingCloure ()
+        
+        useTrailingClosure2 ()
+        
+        learnCaptureValues ()
     }
 }
