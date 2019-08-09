@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2401FDA322FAB4310033E115 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2401FDA222FAB4310033E115 /* Functions.swift */; };
+		2414B71B22FC744F00A8E7C8 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2414B71A22FC744F00A8E7C8 /* Closures.swift */; };
 		2429A67A22EDFD8C00E181FF /* SwiftTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2429A67922EDFD8C00E181FF /* SwiftTour.swift */; };
 		2431B27822C727BB00D8CD1C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2431B27722C727BB00D8CD1C /* main.swift */; };
 		244B9C1222F5D0420097B990 /* StringsAndCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244B9C1122F5D0420097B990 /* StringsAndCharacters.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		2401FDA222FAB4310033E115 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		2414B71A22FC744F00A8E7C8 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		2429A67922EDFD8C00E181FF /* SwiftTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTour.swift; sourceTree = "<group>"; };
 		2431B27422C727BB00D8CD1C /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		2431B27722C727BB00D8CD1C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				244B9C1122F5D0420097B990 /* StringsAndCharacters.swift */,
 				24B05EC022F91271008027A1 /* ControlFlow.swift */,
 				2401FDA222FAB4310033E115 /* Functions.swift */,
+				2414B71A22FC744F00A8E7C8 /* Closures.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2451659C22F09409001BE681 /* BasicOperators.swift in Sources */,
+				2414B71B22FC744F00A8E7C8 /* Closures.swift in Sources */,
 				24B05EC122F91271008027A1 /* ControlFlow.swift in Sources */,
 				244DE3A522ED20BF007CA80A /* TheBasics.swift in Sources */,
 				2401FDA322FAB4310033E115 /* Functions.swift in Sources */,
