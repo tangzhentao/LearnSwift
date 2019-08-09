@@ -142,6 +142,77 @@ class Functions {
         x = y
         y = middle
     }
+    
+    /* 函数类型 -- 开始*/
+    
+    // 1. 使用函数类型变量调用函数
+    func add(left: Int, right: Int) -> Int {
+        return left + right
+    }
+    
+    func multipy (left: Int, right: Int) -> Int {
+        return left * right
+    }
+    
+    func useFunctionType() {
+        var operation: (Int, Int) -> Int = add
+        let x = 3
+        let y = 6
+        print("\(x) + \(y) = \(operation(x, y))")
+        
+        operation = multipy
+        print("\(x) * \(y) = \(operation(x,y))")
+
+    }
+    
+    // 2. 把函数类型作为参数类型
+    func printMathResult(operation: (Int, Int)->Int, left: Int, right: Int) {
+        print("\(left) operation \(right) = \(operation(left,right))")
+
+    }
+    
+    // 3. 函数类型作为返回值
+    func stepForward(input: Int) -> Int {
+        return input + 1
+    }
+    func stepBackward(input: Int) -> Int {
+        return input - 1
+    }
+    func chooseStepFunction(backward: Bool) -> (Int)->Int {
+        return backward ? stepBackward(input:) : stepForward(input:)
+    }
+    func moveNearToZero(num: Int) {
+        print("num = \(num)")
+
+        var originalNum = num
+        while originalNum != 0 {
+            let operation = self.chooseStepFunction(backward: originalNum > 0)
+            originalNum = operation(originalNum)
+            print("num = \(originalNum)")
+        }
+    }
+    /* 使用函数类型 -- 结束*/
+    
+    // 嵌套函数
+    func chooseNestedStepFunction(backward: Bool) -> (Int)->Int {
+        
+        func stepBackward2(input: Int) -> Int { return input - 1 } // 嵌套函数可以捕获外围函数的变量、常量
+        
+        func stepForward2(input: Int) -> Int { return input + 1}
+        
+        return backward ? stepBackward2(input:) : stepForward2(input:)
+    }
+
+    func moveNearToZero2(num: Int) {
+        print("num = \(num)")
+        
+        var originalNum = num
+        while originalNum != 0 {
+            let operation = self.chooseNestedStepFunction(backward: originalNum > 0)
+            originalNum = operation(originalNum)
+            print("num = \(originalNum)")
+        }
+    }
 
     func learn() {
         
@@ -188,6 +259,17 @@ class Functions {
         self.swap(x: &a, y: &b)
         print("after swap: a = \(a), b = \(b)")
 
+        self.useFunctionType()
+        
+        self.printMathResult(operation: add, left:1, right:2)
+        self.printMathResult(operation: multipy, left:1, right:2)
+
+        self.moveNearToZero(num: 3)
+        self.moveNearToZero(num: -4)
+        
+        self.moveNearToZero2(num: 3)
+        self.moveNearToZero2(num: -4)
+        
 
     }
 }
