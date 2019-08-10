@@ -127,6 +127,96 @@ class Closures {
         return incrementer
     }
     
+    /*
+     逃逸闭包
+     逃逸闭包就是，闭包作为参数传入到函数内部后，函数把闭包保存起来之后，直接返回，
+     在以后的某个时机再把闭包取出来执行
+     */
+    var completeHandler: [()->Void] = []
+    func someFunctionWithEscapingClosure(closure: @escaping ()->Void) {
+        completeHandler.append(closure)
+    }
+    func someFunctionWithNonescapingClosure(closure: ()->Void) {
+        closure()
+    }
+    
+    var x = 0
+    func doSomething () {
+        someFunctionWithNonescapingClosure {
+            x = 200
+        }
+        
+        print("x = \(x)")
+        
+        // 使用逃逸闭包访问实例变量，必须显示引用self
+        someFunctionWithEscapingClosure {
+            self.x = 100
+        }
+        completeHandler.first!()
+        print("x = \(x)")
+
+    }
+    
+    /* 自动闭包 */
+    
+    // 使用显式闭包
+    func useExplicitClosure1 () {
+        var customersInLine = ["zhang san", "li si", "wang wu", "ma liu"]
+        
+        print("the number of customer in line: \(customersInLine.count)")
+        let customerProvider = { customersInLine.remove(at: 0) }
+        print("the number of customer in line: \(customersInLine.count)")
+
+        print("now serving \(customerProvider())")
+        print("the number of customer in line: \(customersInLine.count)")
+
+    }
+    
+    // 定义参数为一个显式闭包
+    func serve(customer customerProvider: ()->String) {
+        print("now serving: \(customerProvider())")
+    }
+    // 使用显式闭包
+    func useExplicitClosure2 () {
+        var customersInLine = ["zhang san", "li si", "wang wu", "ma liu"]
+        
+        print("the number of customer in line: \(customersInLine.count)")
+        serve(customer: {customersInLine.remove(at: 0)}) // 显式闭包{customersInLine.remove(at: 0)}
+        print("the number of customer in line: \(customersInLine.count)")
+    }
+    
+    // 定义参数为一个自动闭包
+    func server2(customer customerProvider: @autoclosure ()->String) {
+        print("now serving: \(customerProvider())")
+    }
+    // 使用自动闭包
+    func useAutoclosure() {
+        var customersInLine = ["zhang san", "li si", "wang wu", "ma liu"]
+        
+        print("the number of customer in line: \(customersInLine.count)")
+        server2(customer: customersInLine.remove(at: 0) ) // 自动把表达式customersInLine.remove(at: 0) 包装为显示闭包
+        print("the number of customer in line: \(customersInLine.count)")
+    }
+    
+    // 使用逃逸自动闭包
+    var customerProviders: [()->String] = []
+    func collectCustomerProviders(_ customerProvider: @escaping @autoclosure ()->String ) {
+        customerProviders.append(customerProvider)
+    }
+    func useEscapingAutoclosure () {
+        var customersInLine = ["zhang san", "li si", "wang wu", "ma liu"]
+        collectCustomerProviders(customersInLine.remove(at: 0))
+        collectCustomerProviders(customersInLine.remove(at: 0))
+        collectCustomerProviders(customersInLine.remove(at: 0))
+
+        
+        for item in customerProviders {
+            print("now serving \(item())")
+        }
+    }
+    
+    
+    
     func learn() {
         self.useBackward()
         
@@ -143,5 +233,15 @@ class Closures {
         useTrailingClosure2 ()
         
         learnCaptureValues ()
+        
+        doSomething ()
+        
+        useExplicitClosure1()
+        
+        useExplicitClosure2()
+        
+        useAutoclosure ()
+        
+        useEscapingAutoclosure ()
     }
 }

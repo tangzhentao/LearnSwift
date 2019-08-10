@@ -318,4 +318,6 @@ ControlFlow().learn()
 Functions().learn()
  */
 
-Closures().learn()
+//Closures().learn()
+
+Enumeration().learn()
