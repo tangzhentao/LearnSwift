@@ -82,8 +82,16 @@
 				2401FDA222FAB4310033E115 /* Functions.swift */,
 				2414B71A22FC744F00A8E7C8 /* Closures.swift */,
 				242F444A22FEBCB600EFE371 /* Enumeration.swift */,
+				24436EB323019A2D00867D32 /* StructuresAndClasses */,
 			);
 			path = HelloWorld;
+			sourceTree = "<group>";
+		};
+		24436EB323019A2D00867D32 /* StructuresAndClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StructuresAndClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
