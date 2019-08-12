@@ -97,13 +97,57 @@ class Enumeration {
     
     // 使用原始值
     enum Grade: Int {
-        case E = 0
-        case D = 1
+        case E = 1, D, C, B, A
+    }
+    
+    enum Performance: String {
+        case bad, normal, good
+    }
+    
+    func useRawValue () {
+        let grade = Grade.A
+        print(grade)
+        print(grade.rawValue)
+        
+        let performance = Performance.normal
+        print(performance)
+        print(performance.rawValue)
+    }
+    
+    // 递归枚举
+    enum ArithmeticExpression {
+        case number(Int)
+        indirect case addtion(ArithmeticExpression, ArithmeticExpression)
+        indirect case multiplication(ArithmeticExpression, ArithmeticExpression)
+    }
+    
+    func useArithmeticExpression () {
+        let five = ArithmeticExpression.number(5)
+        let four = ArithmeticExpression.number(4)
+        let sum = ArithmeticExpression.addtion(five, four)
+        let two = ArithmeticExpression.number(2)
+        let product = ArithmeticExpression.multiplication(sum, two)
+        let result = evaluate(product)
+        print("(\(five) + \(four)) * \(two) = \(result)")
+    }
+    func evaluate(_ expression: ArithmeticExpression) -> Int {
+        switch expression {
+        case .number(let num):
+            return num
+        case let .addtion(leftExpression, rightExpression):
+            return (evaluate(leftExpression) + evaluate(rightExpression))
+        case let .multiplication(left, right):
+            return ( evaluate(left) * evaluate(right) )
+        }
     }
     
     func learn() {
         testPrintValue ()
         
         useBarCode ()
+        
+        useRawValue()
+        
+        useArithmeticExpression ()
     }
 }
