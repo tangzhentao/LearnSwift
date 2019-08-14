@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2401FDA322FAB4310033E115 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2401FDA222FAB4310033E115 /* Functions.swift */; };
 		2414B71B22FC744F00A8E7C8 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2414B71A22FC744F00A8E7C8 /* Closures.swift */; };
+		24263DC023045BBA00381699 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24263DBF23045BBA00381699 /* Properties.swift */; };
 		2429A67A22EDFD8C00E181FF /* SwiftTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2429A67922EDFD8C00E181FF /* SwiftTour.swift */; };
 		242F444B22FEBCB600EFE371 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242F444A22FEBCB600EFE371 /* Enumeration.swift */; };
 		2431B27822C727BB00D8CD1C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2431B27722C727BB00D8CD1C /* main.swift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		2401FDA222FAB4310033E115 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		2414B71A22FC744F00A8E7C8 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		24263DBF23045BBA00381699 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		2429A67922EDFD8C00E181FF /* SwiftTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTour.swift; sourceTree = "<group>"; };
 		242F444A22FEBCB600EFE371 /* Enumeration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumeration.swift; sourceTree = "<group>"; };
 		2431B27422C727BB00D8CD1C /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				247450C72302444800D756E4 /* StructuresAndClasses.swift */,
+				24263DBF23045BBA00381699 /* Properties.swift */,
 			);
 			path = StructuresAndClasses;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				2401FDA322FAB4310033E115 /* Functions.swift in Sources */,
 				2429A67A22EDFD8C00E181FF /* SwiftTour.swift in Sources */,
 				244B9C1222F5D0420097B990 /* StringsAndCharacters.swift in Sources */,
+				24263DC023045BBA00381699 /* Properties.swift in Sources */,
 				247450C82302444800D756E4 /* StructuresAndClasses.swift in Sources */,
 				2431B27822C727BB00D8CD1C /* main.swift in Sources */,
 			);
