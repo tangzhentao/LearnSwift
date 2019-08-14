@@ -15,6 +15,7 @@
 		244B9C1222F5D0420097B990 /* StringsAndCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244B9C1122F5D0420097B990 /* StringsAndCharacters.swift */; };
 		244DE3A522ED20BF007CA80A /* TheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244DE3A422ED20BF007CA80A /* TheBasics.swift */; };
 		2451659C22F09409001BE681 /* BasicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2451659B22F09409001BE681 /* BasicOperators.swift */; };
+		247450C82302444800D756E4 /* StructuresAndClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247450C72302444800D756E4 /* StructuresAndClasses.swift */; };
 		24B05EC122F91271008027A1 /* ControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B05EC022F91271008027A1 /* ControlFlow.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		244B9C1122F5D0420097B990 /* StringsAndCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndCharacters.swift; sourceTree = "<group>"; };
 		244DE3A422ED20BF007CA80A /* TheBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBasics.swift; sourceTree = "<group>"; };
 		2451659B22F09409001BE681 /* BasicOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOperators.swift; sourceTree = "<group>"; };
+		247450C72302444800D756E4 /* StructuresAndClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuresAndClasses.swift; sourceTree = "<group>"; };
 		24B05EC022F91271008027A1 /* ControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 		24436EB323019A2D00867D32 /* StructuresAndClasses */ = {
 			isa = PBXGroup;
 			children = (
+				247450C72302444800D756E4 /* StructuresAndClasses.swift */,
 			);
 			path = StructuresAndClasses;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				2401FDA322FAB4310033E115 /* Functions.swift in Sources */,
 				2429A67A22EDFD8C00E181FF /* SwiftTour.swift in Sources */,
 				244B9C1222F5D0420097B990 /* StringsAndCharacters.swift in Sources */,
+				247450C82302444800D756E4 /* StructuresAndClasses.swift in Sources */,
 				2431B27822C727BB00D8CD1C /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

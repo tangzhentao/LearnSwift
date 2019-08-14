@@ -320,4 +320,5 @@ Functions().learn()
 
 //Closures().learn()
 
-Enumeration().learn()
+//Enumeration().learn()
+StructuresAndClasses().learn()
