@@ -323,4 +323,15 @@ Functions().learn()
 //Enumeration().learn()
 //StructuresAndClasses().learn()
 
-Properties().learn()
+//Properties().learn()
+
+//Methods().learn()
+
+//Subscripts().learn()
+
+Ihheritance().learn()
+
+
+
+
+
