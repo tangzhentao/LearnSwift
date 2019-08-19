@@ -329,7 +329,12 @@ Functions().learn()
 
 //Subscripts().learn()
 
-Ihheritance().learn()
+//Ihheritance().learn()
+
+Initialization().learn()
+
+
+
 
 
 
