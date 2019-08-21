@@ -86,6 +86,31 @@ class Initialization
         
     }
     
+    /* 构造器的继承和重写 */
+    class Vehicle {
+        var numberOfWheels = 0
+        var description: String {
+            return "\(numberOfWheels) wheel(s)"
+        }
+    }
+    
+    class Bycle: Vehicle {
+        
+        var hasBasket: Bool
+        override init() {
+            hasBasket = true
+            super.init()
+            numberOfWheels = 2
+        }
+    }
+    
+    func learnInheritAndOverrideInitializer () {
+        var vehicle = Vehicle()
+        print("vehicle:", vehicle.description)
+        var bycle = Bycle()
+        print("bycle:", bycle.description)
+    }
+    
     
     func learn () {
         
@@ -107,5 +132,7 @@ class Initialization
 
         let rect = Rect(center: Point(x: 4, y: 4), size: Size(width: 4, height: 4))
         print("rect origin:", rect.origin)
+        
+        learnInheritAndOverrideInitializer ()
     }
 }
