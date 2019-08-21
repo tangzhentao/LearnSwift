@@ -105,10 +105,75 @@ class Initialization
     }
     
     func learnInheritAndOverrideInitializer () {
-        var vehicle = Vehicle()
+        let vehicle = Vehicle()
         print("vehicle:", vehicle.description)
-        var bycle = Bycle()
+        let bycle = Bycle()
         print("bycle:", bycle.description)
+    }
+    
+    // 构造器的自动继承
+    class Food {
+        var name: String
+        init(name: String) {
+            self.name = name
+        }
+        
+        convenience init () {
+            self.init(name: "[unnamed]")
+        }
+    }
+    
+    class RecipeIngredient: Food {
+        var quatity: Int
+        
+        init(name: String, quatity: Int) {
+            self.quatity = quatity
+            super.init(name: name)
+        }
+        
+        convenience override init(name: String) {
+            self.init (name:name, quatity: 1)
+        }
+        
+        var description: String {
+            return name + " x \(quatity)"
+        }
+    }
+    
+    class ShoppingListItem: RecipeIngredient {
+        var purchased = false
+        override var description: String {
+            return super.description + (purchased ? " ✔" : " ✘")
+        }
+        
+    }
+    
+    func learnAutomicInitializerInheritance () {
+        let food1 = Food()
+        let food2 = Food(name: "bacon")
+        print("food1:", food1.name)
+        print("food2:", food2.name)
+        
+        let ingredient1 = RecipeIngredient() // 自动继承的便利构造器
+        let ingredient2 = RecipeIngredient(name: "rice")
+        let ingredient3 = RecipeIngredient(name: "egg", quatity: 2)
+        print("ingredient1", ingredient1.description)
+        print("ingredient2", ingredient2.description)
+        print("ingredient3", ingredient3.description)
+
+        let shoppingList = [ShoppingListItem(),
+                            ShoppingListItem(name: "chicken"),
+                            ShoppingListItem(name: "egg", quatity: 10)]
+        shoppingList[0].name = "oil"
+        shoppingList[0].purchased = true
+        shoppingList[1].purchased = true
+        
+        for item in shoppingList {
+            print("item:", item.description)
+        }
+
+        
+
     }
     
     
@@ -134,5 +199,7 @@ class Initialization
         print("rect origin:", rect.origin)
         
         learnInheritAndOverrideInitializer ()
+        
+        learnAutomicInitializerInheritance ()
     }
 }
