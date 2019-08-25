@@ -22,6 +22,8 @@
 		245E8CE4230AD6710011C0D0 /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E8CE3230AD6710011C0D0 /* Initialization.swift */; };
 		247450C82302444800D756E4 /* StructuresAndClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247450C72302444800D756E4 /* StructuresAndClasses.swift */; };
 		24B05EC122F91271008027A1 /* ControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B05EC022F91271008027A1 /* ControlFlow.swift */; };
+		24F357562310F0080071122E /* Deinitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F357552310F0080071122E /* Deinitialization.swift */; };
+		24F357582310F58F0071122E /* OptionalChainning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F357572310F58F0071122E /* OptionalChainning.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +55,8 @@
 		245E8CE3230AD6710011C0D0 /* Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initialization.swift; sourceTree = "<group>"; };
 		247450C72302444800D756E4 /* StructuresAndClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuresAndClasses.swift; sourceTree = "<group>"; };
 		24B05EC022F91271008027A1 /* ControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlFlow.swift; sourceTree = "<group>"; };
+		24F357552310F0080071122E /* Deinitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deinitialization.swift; sourceTree = "<group>"; };
+		24F357572310F58F0071122E /* OptionalChainning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalChainning.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				2418A8632308D1B400594652 /* Subscripts.swift */,
 				2418A8652308FF5D00594652 /* Inheritance.swift */,
 				245E8CE3230AD6710011C0D0 /* Initialization.swift */,
+				24F357552310F0080071122E /* Deinitialization.swift */,
+				24F357572310F58F0071122E /* OptionalChainning.swift */,
 			);
 			path = StructuresAndClasses;
 			sourceTree = "<group>";
@@ -171,6 +177,7 @@
 			files = (
 				2418A8642308D1B400594652 /* Subscripts.swift in Sources */,
 				2451659C22F09409001BE681 /* BasicOperators.swift in Sources */,
+				24F357562310F0080071122E /* Deinitialization.swift in Sources */,
 				2418A8662308FF5D00594652 /* Inheritance.swift in Sources */,
 				245E8CE4230AD6710011C0D0 /* Initialization.swift in Sources */,
 				2414B71B22FC744F00A8E7C8 /* Closures.swift in Sources */,
@@ -181,6 +188,7 @@
 				2401FDA322FAB4310033E115 /* Functions.swift in Sources */,
 				2429A67A22EDFD8C00E181FF /* SwiftTour.swift in Sources */,
 				244B9C1222F5D0420097B990 /* StringsAndCharacters.swift in Sources */,
+				24F357582310F58F0071122E /* OptionalChainning.swift in Sources */,
 				24263DC023045BBA00381699 /* Properties.swift in Sources */,
 				247450C82302444800D756E4 /* StructuresAndClasses.swift in Sources */,
 				2431B27822C727BB00D8CD1C /* main.swift in Sources */,
