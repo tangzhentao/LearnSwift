@@ -14,7 +14,24 @@ class OptionalChainning {
     }
     
     class Resident {
-        var numberOfRooms = 1
+        var rooms = [Room]()
+        var numberOfRooms: Int {
+            return rooms.count
+        }
+        
+        subscript (index: Int) -> Room {
+            get {
+                return rooms[index]
+            }
+            
+            set {
+                rooms[index] = newValue
+            }
+        }
+    }
+    
+    class Room {
+        
     }
     
     func learn() {
