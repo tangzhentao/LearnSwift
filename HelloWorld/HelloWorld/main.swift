@@ -337,7 +337,9 @@ Functions().learn()
 
 //OptionalChainning().learn()
 
-ErrorHandling().learn()
+//ErrorHandling().learn()
+
+TypeCasting().learn()
 
 
 

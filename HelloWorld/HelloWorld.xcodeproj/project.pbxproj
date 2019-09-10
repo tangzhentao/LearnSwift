@@ -22,6 +22,7 @@
 		2451659C22F09409001BE681 /* BasicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2451659B22F09409001BE681 /* BasicOperators.swift */; };
 		245E8CE4230AD6710011C0D0 /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E8CE3230AD6710011C0D0 /* Initialization.swift */; };
 		247450C82302444800D756E4 /* StructuresAndClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247450C72302444800D756E4 /* StructuresAndClasses.swift */; };
+		2490C22B2327342200C72CE0 /* TypeCasting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2490C22A2327342200C72CE0 /* TypeCasting.swift */; };
 		24B05EC122F91271008027A1 /* ControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B05EC022F91271008027A1 /* ControlFlow.swift */; };
 		24F357562310F0080071122E /* Deinitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F357552310F0080071122E /* Deinitialization.swift */; };
 		24F357582310F58F0071122E /* OptionalChainning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F357572310F58F0071122E /* OptionalChainning.swift */; };
@@ -56,6 +57,7 @@
 		2451659B22F09409001BE681 /* BasicOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOperators.swift; sourceTree = "<group>"; };
 		245E8CE3230AD6710011C0D0 /* Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initialization.swift; sourceTree = "<group>"; };
 		247450C72302444800D756E4 /* StructuresAndClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuresAndClasses.swift; sourceTree = "<group>"; };
+		2490C22A2327342200C72CE0 /* TypeCasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCasting.swift; sourceTree = "<group>"; };
 		24B05EC022F91271008027A1 /* ControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlFlow.swift; sourceTree = "<group>"; };
 		24F357552310F0080071122E /* Deinitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deinitialization.swift; sourceTree = "<group>"; };
 		24F357572310F58F0071122E /* OptionalChainning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalChainning.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				24436EB323019A2D00867D32 /* StructuresAndClasses */,
 				24F357572310F58F0071122E /* OptionalChainning.swift */,
 				2438B6BC23249682009C7F5C /* ErrorHandling.swift */,
+				2490C22A2327342200C72CE0 /* TypeCasting.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				24F357562310F0080071122E /* Deinitialization.swift in Sources */,
 				2418A8662308FF5D00594652 /* Inheritance.swift in Sources */,
 				245E8CE4230AD6710011C0D0 /* Initialization.swift in Sources */,
+				2490C22B2327342200C72CE0 /* TypeCasting.swift in Sources */,
 				2414B71B22FC744F00A8E7C8 /* Closures.swift in Sources */,
 				242F444B22FEBCB600EFE371 /* Enumeration.swift in Sources */,
 				24B05EC122F91271008027A1 /* ControlFlow.swift in Sources */,
