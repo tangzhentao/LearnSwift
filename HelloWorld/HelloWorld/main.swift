@@ -339,8 +339,11 @@ Functions().learn()
 
 //ErrorHandling().learn()
 
-TypeCasting().learn()
+//TypeCasting().learn()
 
+//Extension().learn()
+
+Protocols().learn()
 
 
 
