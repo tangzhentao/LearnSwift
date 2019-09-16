@@ -24,6 +24,8 @@
 		247450C82302444800D756E4 /* StructuresAndClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247450C72302444800D756E4 /* StructuresAndClasses.swift */; };
 		2490C22B2327342200C72CE0 /* TypeCasting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2490C22A2327342200C72CE0 /* TypeCasting.swift */; };
 		24B05EC122F91271008027A1 /* ControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B05EC022F91271008027A1 /* ControlFlow.swift */; };
+		24D3AAAB2328739E00D52145 /* NestedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3AAAA2328739E00D52145 /* NestedTypes.swift */; };
+		24D3AAAD23287BDE00D52145 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3AAAC23287BDE00D52145 /* Extensions.swift */; };
 		24F357562310F0080071122E /* Deinitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F357552310F0080071122E /* Deinitialization.swift */; };
 		24F357582310F58F0071122E /* OptionalChainning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F357572310F58F0071122E /* OptionalChainning.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,8 @@
 		247450C72302444800D756E4 /* StructuresAndClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuresAndClasses.swift; sourceTree = "<group>"; };
 		2490C22A2327342200C72CE0 /* TypeCasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCasting.swift; sourceTree = "<group>"; };
 		24B05EC022F91271008027A1 /* ControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlFlow.swift; sourceTree = "<group>"; };
+		24D3AAAA2328739E00D52145 /* NestedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedTypes.swift; sourceTree = "<group>"; };
+		24D3AAAC23287BDE00D52145 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		24F357552310F0080071122E /* Deinitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deinitialization.swift; sourceTree = "<group>"; };
 		24F357572310F58F0071122E /* OptionalChainning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalChainning.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +110,8 @@
 				24F357572310F58F0071122E /* OptionalChainning.swift */,
 				2438B6BC23249682009C7F5C /* ErrorHandling.swift */,
 				2490C22A2327342200C72CE0 /* TypeCasting.swift */,
+				24D3AAAA2328739E00D52145 /* NestedTypes.swift */,
+				24D3AAAC23287BDE00D52145 /* Extensions.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -181,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D3AAAB2328739E00D52145 /* NestedTypes.swift in Sources */,
 				2418A8642308D1B400594652 /* Subscripts.swift in Sources */,
 				2451659C22F09409001BE681 /* BasicOperators.swift in Sources */,
 				24F357562310F0080071122E /* Deinitialization.swift in Sources */,
@@ -193,6 +200,7 @@
 				240E078E2307AA2B00274525 /* Methods.swift in Sources */,
 				2438B6BD23249682009C7F5C /* ErrorHandling.swift in Sources */,
 				244DE3A522ED20BF007CA80A /* TheBasics.swift in Sources */,
+				24D3AAAD23287BDE00D52145 /* Extensions.swift in Sources */,
 				2401FDA322FAB4310033E115 /* Functions.swift in Sources */,
 				2429A67A22EDFD8C00E181FF /* SwiftTour.swift in Sources */,
 				244B9C1222F5D0420097B990 /* StringsAndCharacters.swift in Sources */,
