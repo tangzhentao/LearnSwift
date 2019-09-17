@@ -345,6 +345,11 @@ Functions().learn()
 
 Extensions().learn()
 
+//TypeCasting().learn()
+
+//Extension().learn()
+
+Protocols().learn()
 
 
 
