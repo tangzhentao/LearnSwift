@@ -343,7 +343,7 @@ Functions().learn()
 
 //NestedTypes().learn()
 
-Extensions().learn()
+//Extensions().learn()
 
 //TypeCasting().learn()
 

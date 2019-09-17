@@ -164,8 +164,81 @@ class Student: SomeClassOnlyProtocol {
 //    
 //}
 
+// 协议合成
+protocol Named {
+    var name: String {set get}
+}
+
+protocol Aged {
+    var age: Int {set get}
+}
+
+struct Someone: Named, Aged {
+    var name: String
+    var age: Int
+}
+
+func wishHappyBirthday(to celebretor: Named & Aged) { // 使用协议组合
+    print("Happy birthday", celebretor.name, "you are", celebretor.age)
+}
+
+class Location {
+    var latitude: Double
+    var longitude: Double
+    
+    init(latitude: Double, longitude: Double) {
+        self.latitude = latitude
+        self.longitude = longitude
+    }
+}
+
+class City: Location, Named {
+    var name: String
+    init(latitude: Double, longitude: Double, name: String) {
+        self.name = name
+        super.init(latitude: latitude, longitude: longitude)
+    }
+}
+
+func beginConcert(in location: Location & Named) {
+    print("Hello,", location.name)
+}
+
+// 检查协议的一致性
+protocol HasArea {
+    var area: Double {get}
+}
 
 class Protocols {
+    
+    class Circle: HasArea {
+        let pi = 3.1415926
+        var radius: Double
+        
+        init(radius: Double) {
+            self.radius = radius
+        }
+        
+        var area: Double {
+            return 2 * pi * radius * radius
+        }
+    }
+    
+    class Country: HasArea {
+        var area: Double
+        init(area: Double) {
+            self.area = area
+        }
+    }
+    
+    class Animal {
+        var legs: Int
+        init(legs: Int) {
+            self.legs = legs
+        }
+        
+    }
+    
     func learn() {
         let john = Person(fullName: "lebron, ad, joho")
         print(john)
@@ -209,5 +282,24 @@ class Protocols {
             print("thing:", thing.textualDescription)
         }
         
+        
+        let xiaoli = Someone(name: "xiao li", age: 16)
+        wishHappyBirthday(to: xiaoli)
+        
+        let seattle = City(latitude: 25, longitude: -120, name: "seattle")
+        beginConcert(in: seattle)
+        
+        // 检查协议的一致性
+        let objects: [Any] = [Circle(radius: 2),
+                              Country(area: 10000),
+                              Animal(legs: 4)]
+        
+        for object in objects {
+            if let objectWithArea = object as? HasArea {
+                print("area is", objectWithArea.area)
+            } else {
+                print("something that doesn't have area.")
+            }
+        }
     }
 }
