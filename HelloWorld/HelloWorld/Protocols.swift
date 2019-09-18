@@ -209,6 +209,31 @@ protocol HasArea {
     var area: Double {get}
 }
 
+@objc protocol CounterDataSource {
+    @objc optional func increment(forCount: Int) -> Int
+    @objc optional var fixedIncrement: Int {get}
+}
+
+// 协议扩展
+extension RandomNumberGenerator {
+    func randomBool() -> Bool {
+        return random() > 0.5
+    }
+}
+
+// 为扩展协议添加限制条件
+extension Collection where Element: Equatable {
+    func allEqual() -> Bool {
+        for element in self {
+            if element != self.first {
+                return false
+            }
+        }
+        
+        return true
+    }
+}
+
 class Protocols {
     
     class Circle: HasArea {
@@ -237,6 +262,34 @@ class Protocols {
             self.legs = legs
         }
         
+    }
+    
+    class Counter {
+        var count = 0
+        var dataSource: CounterDataSource?
+        func imcrement () {
+            if let amount = dataSource?.increment?(forCount: count) {
+                count += amount
+            } else if let amount = dataSource?.fixedIncrement {
+                count += amount
+            }
+        }
+    }
+    
+    class ThreeSource: NSObject, CounterDataSource {
+        let fixedIncrement = 3
+    }
+    
+    class TowardZeroDataSource: NSObject, CounterDataSource {
+        func increment(forCount: Int) -> Int {
+            if forCount == 0 {
+                return 0
+            } else if forCount > 0 {
+                return -1
+            } else {
+                return 1
+            }
+        }
     }
     
     func learn() {
@@ -301,5 +354,29 @@ class Protocols {
                 print("something that doesn't have area.")
             }
         }
+        
+        let counter = Counter()
+        counter.dataSource = ThreeSource()
+        for _ in 0...4 {
+            counter.imcrement()
+            print(counter.count)
+        }
+        
+        counter.dataSource = TowardZeroDataSource()
+        for _ in 0...4 {
+            counter.imcrement()
+            print(counter.count)
+        }
+        
+        // 使用协议扩展
+        let aGenerator = LinearCongruentialGenerator()
+        print("Here is a random number:", aGenerator.random())
+        print("And here a random Boolen:", aGenerator.randomBool())
+        
+        // 使用添加了限制条件的扩展协议
+        let equalNumbers = [100, 100, 100, 100]
+        let differentNumbers = [100, 100, 200]
+        print(equalNumbers.allEqual())
+        print(differentNumbers.allEqual())
     }
 }

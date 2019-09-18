@@ -27,7 +27,6 @@ extension Double {
     var ft: Double {
         return self / 3.28084
     }
-    
 }
 
 class Extensions {
@@ -38,6 +37,9 @@ class Extensions {
         print("one inch is \(oneInch) meters")
         let threeFeet = 3.0.ft
         print("three feet is \(threeFeet) meters")
+        
+        let towK = 2.0.k
+        print("tow k:", towK)
     }
     
     
