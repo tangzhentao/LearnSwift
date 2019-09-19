@@ -351,6 +351,8 @@ Functions().learn()
 
 //Protocols().learn()
 
+Generics().learn()
+
 
 
 

@@ -29,6 +29,7 @@
 		2490C22B2327342200C72CE0 /* TypeCasting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2490C22A2327342200C72CE0 /* TypeCasting.swift */; };
 		24B05EC122F91271008027A1 /* ControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B05EC022F91271008027A1 /* ControlFlow.swift */; };
 		24BDDF952331D1130056AB3A /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BDDF942331D1130056AB3A /* DoubleExtension.swift */; };
+		24CF39C523330953004367A0 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CF39C423330953004367A0 /* Generics.swift */; };
 		24D3AAAB2328739E00D52145 /* NestedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3AAAA2328739E00D52145 /* NestedTypes.swift */; };
 		24D3AAAD23287BDE00D52145 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3AAAC23287BDE00D52145 /* Extensions.swift */; };
 		24F357562310F0080071122E /* Deinitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F357552310F0080071122E /* Deinitialization.swift */; };
@@ -71,6 +72,7 @@
 		2490C22A2327342200C72CE0 /* TypeCasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCasting.swift; sourceTree = "<group>"; };
 		24B05EC022F91271008027A1 /* ControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlFlow.swift; sourceTree = "<group>"; };
 		24BDDF942331D1130056AB3A /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		24CF39C423330953004367A0 /* Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
 		24D3AAAA2328739E00D52145 /* NestedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedTypes.swift; sourceTree = "<group>"; };
 		24D3AAAC23287BDE00D52145 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		24F357552310F0080071122E /* Deinitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deinitialization.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				24645868232B3A75009E3E2A /* RectExtension.swift */,
 				2464587D232B45BB009E3E2A /* Extension.swift */,
 				2464587F232CD63C009E3E2A /* Protocols.swift */,
+				24CF39C423330953004367A0 /* Generics.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				2490C22B2327342200C72CE0 /* TypeCasting.swift in Sources */,
 				24645869232B3A75009E3E2A /* RectExtension.swift in Sources */,
 				2414B71B22FC744F00A8E7C8 /* Closures.swift in Sources */,
+				24CF39C523330953004367A0 /* Generics.swift in Sources */,
 				242F444B22FEBCB600EFE371 /* Enumeration.swift in Sources */,
 				24B05EC122F91271008027A1 /* ControlFlow.swift in Sources */,
 				240E078E2307AA2B00274525 /* Methods.swift in Sources */,
