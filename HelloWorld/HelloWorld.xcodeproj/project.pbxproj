@@ -17,6 +17,7 @@
 		242F444B22FEBCB600EFE371 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242F444A22FEBCB600EFE371 /* Enumeration.swift */; };
 		2431B27822C727BB00D8CD1C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2431B27722C727BB00D8CD1C /* main.swift */; };
 		2438B6BD23249682009C7F5C /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438B6BC23249682009C7F5C /* ErrorHandling.swift */; };
+		243EF6C42335BC7500A7F896 /* GenericsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243EF6C32335BC7500A7F896 /* GenericsExtension.swift */; };
 		244B9C1222F5D0420097B990 /* StringsAndCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244B9C1122F5D0420097B990 /* StringsAndCharacters.swift */; };
 		244DE3A522ED20BF007CA80A /* TheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244DE3A422ED20BF007CA80A /* TheBasics.swift */; };
 		2451659C22F09409001BE681 /* BasicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2451659B22F09409001BE681 /* BasicOperators.swift */; };
@@ -60,6 +61,7 @@
 		2431B27422C727BB00D8CD1C /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		2431B27722C727BB00D8CD1C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2438B6BC23249682009C7F5C /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		243EF6C32335BC7500A7F896 /* GenericsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsExtension.swift; sourceTree = "<group>"; };
 		244B9C1122F5D0420097B990 /* StringsAndCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsAndCharacters.swift; sourceTree = "<group>"; };
 		244DE3A422ED20BF007CA80A /* TheBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBasics.swift; sourceTree = "<group>"; };
 		2451659B22F09409001BE681 /* BasicOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOperators.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				2464587D232B45BB009E3E2A /* Extension.swift */,
 				2464587F232CD63C009E3E2A /* Protocols.swift */,
 				24CF39C423330953004367A0 /* Generics.swift */,
+				243EF6C32335BC7500A7F896 /* GenericsExtension.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				2464587E232B45BB009E3E2A /* Extension.swift in Sources */,
 				2429A67A22EDFD8C00E181FF /* SwiftTour.swift in Sources */,
 				244B9C1222F5D0420097B990 /* StringsAndCharacters.swift in Sources */,
+				243EF6C42335BC7500A7F896 /* GenericsExtension.swift in Sources */,
 				24F357582310F58F0071122E /* OptionalChainning.swift in Sources */,
 				24263DC023045BBA00381699 /* Properties.swift in Sources */,
 				247450C82302444800D756E4 /* StructuresAndClasses.swift in Sources */,
