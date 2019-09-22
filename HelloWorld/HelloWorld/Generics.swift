@@ -16,6 +16,14 @@ protocol Container {
     subscript (index: Int) -> Item {get}
 }
 
+// 扩展Container协议
+extension Container where Item: Equatable  {
+    
+    func startWith(_ item: Item) -> Bool {
+        return (count >= 1 && self[0] == item)
+    }
+}
+
 class Generics
 {
     func swapTowInt(_ a: inout Int, _ b: inout  Int) {
@@ -216,7 +224,29 @@ class Generics
         
         let suffix = numStack.suffix(3)
         print("suffix:", suffix)
+        
+        var stringStack = Stack<String>()
+        stringStack.append("hello")
+        stringStack.append("world")
+        stringStack.append("hi")
+        stringStack.append("swift")
 
+        if stringStack.isTop("swift") {
+            print("top item is swift")
+        } else {
+            print("top item is something else")
+        }
+        // 尝试在其元素不遵守Equalable协议的栈上调用 isTop
+        struct NotEquatable {
+            var name = ""
+        }
+        
+        var notEqualableStack = Stack<NotEquatable>()
+        notEqualableStack.append(NotEquatable())
+        notEqualableStack.append(NotEquatable())
+        notEqualableStack.append(NotEquatable())
+
+//        notEqualableStack.isTop(NotEquatable()) // 编译时b报错：参数没有遵守Equalable协议
     }
 }
 
@@ -259,7 +289,7 @@ func allItemsMatch<C1: Container, C2: Container>(_ someContainer: C1, _ anotherC
 
 // 具有泛型where子句的扩展
 extension Generics.Stack where Element: Equatable {
-    func isTop(item: Element) -> Bool {
+    func isTop(_ item: Element) -> Bool {
         
         guard let topItem = items.last else {
             return false
