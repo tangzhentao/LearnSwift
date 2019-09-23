@@ -14,6 +14,12 @@ protocol Container {
     mutating func append(_ item: Item)
     var count: Int {get}
     subscript (index: Int) -> Item {get}
+    
+    /*
+    // 具有泛型where子句的关联类型
+    associatedtype Iterator: IteratorProtocol  where Iterator.Element == Item
+    func makeIterator() -> Iterator
+     */
 }
 
 // 扩展Container协议
@@ -296,5 +302,17 @@ extension Generics.Stack where Element: Equatable {
         }
         
         return topItem == item
+    }
+}
+
+// 泛型下标
+extension Container {
+    subscript<Indices: Sequence>(indices: Indices) ->[Item] where Indices.Iterator.Element == Int {
+        var result = [Item]()
+        for index in indices {
+            result.append(self[index])
+        }
+        
+        return result
     }
 }
