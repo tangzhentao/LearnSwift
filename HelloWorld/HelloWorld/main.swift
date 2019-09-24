@@ -351,7 +351,9 @@ Functions().learn()
 
 //Protocols().learn()
 
-Generics().learn()
+//Generics().learn()
+
+OpaqueTypes().learn()
 
 
 
