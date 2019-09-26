@@ -357,6 +357,8 @@ Functions().learn()
 
 ARC().learn()
 
+MemorySafety().learn()
+
 
 
 

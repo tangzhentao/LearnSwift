@@ -35,6 +35,7 @@
 		24CF39C523330953004367A0 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CF39C423330953004367A0 /* Generics.swift */; };
 		24D3AAAB2328739E00D52145 /* NestedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3AAAA2328739E00D52145 /* NestedTypes.swift */; };
 		24D3AAAD23287BDE00D52145 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3AAAC23287BDE00D52145 /* Extensions.swift */; };
+		24E868A1233C908B00D6D02F /* MemorySafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E868A0233C908B00D6D02F /* MemorySafety.swift */; };
 		24F357562310F0080071122E /* Deinitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F357552310F0080071122E /* Deinitialization.swift */; };
 		24F357582310F58F0071122E /* OptionalChainning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F357572310F58F0071122E /* OptionalChainning.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		24CF39C423330953004367A0 /* Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
 		24D3AAAA2328739E00D52145 /* NestedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedTypes.swift; sourceTree = "<group>"; };
 		24D3AAAC23287BDE00D52145 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		24E868A0233C908B00D6D02F /* MemorySafety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorySafety.swift; sourceTree = "<group>"; };
 		24F357552310F0080071122E /* Deinitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deinitialization.swift; sourceTree = "<group>"; };
 		24F357572310F58F0071122E /* OptionalChainning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalChainning.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +141,7 @@
 				243EF6C32335BC7500A7F896 /* GenericsExtension.swift */,
 				242604AB2339A88100A7AF54 /* OpaqueTypes.swift */,
 				2488E92A233AFF3F0057FFFB /* ARC.swift */,
+				24E868A0233C908B00D6D02F /* MemorySafety.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				24D3AAAB2328739E00D52145 /* NestedTypes.swift in Sources */,
 				2418A8642308D1B400594652 /* Subscripts.swift in Sources */,
+				24E868A1233C908B00D6D02F /* MemorySafety.swift in Sources */,
 				24645880232CD63C009E3E2A /* Protocols.swift in Sources */,
 				24645867232B37A9009E3E2A /* Rect.swift in Sources */,
 				2451659C22F09409001BE681 /* BasicOperators.swift in Sources */,
