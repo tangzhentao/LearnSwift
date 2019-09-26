@@ -118,11 +118,52 @@ class ARC {
     func learnThird() {
         let China = Country(name: "China", capitalName: "beijing")
         print("capital city:", China.capitalCity.name)
-        
-        
-        
     }
     
+    /* 闭包引起的循环强引用 */
+    class HTMLElement {
+        let name: String
+        let text: String?
+        
+        init(name: String, text: String? = nil) {
+            self.name = name
+            self.text = text
+        }
+        
+        deinit {
+            print("html element \(name) is being deinitialized")
+        }
+        
+        lazy var asHTML: ()->String = {
+            [unowned self] in
+            if let text = self.text {
+                return "<\(self.name)>\(text)</\(self.name)>"
+            } else {
+                return "<\(self.name) />"
+            }
+        }
+    }
+    
+    func learnStrongReferenceCyclesForClosures() {
+        let title = HTMLElement(name: "title")
+        
+        let defaultText = "some default text"
+        title.asHTML = {
+            [unowned title] in
+            return "<\(title.name)> \(title.text ?? defaultText) </\(title.name)>>"
+        }
+        print(title.asHTML())
+        
+        var paragraph: HTMLElement? = HTMLElement(name: "paragraph")
+        paragraph?.asHTML = {
+            [unowned element = paragraph!] in
+            return "<\(element.name)> \(element.text ?? defaultText) </\(element.name)>>"
+        }
+        paragraph = nil
+        
+        print("learnStrongReferenceCyclesForClosures: end")
+    }
+        
     func learn() {
         
         localObject()
@@ -158,5 +199,7 @@ class ARC {
         learnUnownedReference ()
         
         learnThird()
+        
+        learnStrongReferenceCyclesForClosures()
     }
 }
