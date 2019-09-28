@@ -90,6 +90,5 @@ class MemorySafety {
         learnConflictingAccessToSelf()
         
         learnConflictingAccessToProperties()
-        
     }
 }
