@@ -40,3 +40,17 @@ private class SomePrivateClass { // 显示 private 类
 private func someFunction () -> (SomeFilePrivateClass, SomePrivateClass) {
     return (SomeFilePrivateClass(), SomePrivateClass())
 }
+
+/* 子类 */
+class SomeParentClass {
+    fileprivate func somePrivateMethod () {}
+}
+
+class SomeChildClass: SomeParentClass {
+    internal override func somePrivateMethod () {}
+}
+
+/* 为setter定义更严格的访问权限，相对于getter */
+struct TrackedString {
+    
+}
