@@ -52,5 +52,27 @@ class SomeChildClass: SomeParentClass {
 
 /* 为setter定义更严格的访问权限，相对于getter */
 struct TrackedString {
+    internal private(set) var numberOfEdits = 0
+    var value: String = "" {
+        didSet {
+            numberOfEdits += 1
+        }
+    }
+}
+
+func learnPrivateSet() {
+    var trackedString = TrackedString()
     
+    print("number of eidits:", trackedString.numberOfEdits)
+    trackedString.value = "hello"
+    print("number of eidits:", trackedString.numberOfEdits)
+    trackedString.value = "hello"
+    print("number of eidits:", trackedString.numberOfEdits)
+
+}
+
+class AccessControl {
+    func learn() {
+        learnPrivateSet()
+    }
 }

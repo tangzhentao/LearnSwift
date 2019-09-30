@@ -355,9 +355,11 @@ Functions().learn()
 
 //OpaqueTypes().learn()
 
-ARC().learn()
+//ARC().learn()
+//
+//MemorySafety().learn()
 
-MemorySafety().learn()
+AccessControl().learn()
 
 
 
