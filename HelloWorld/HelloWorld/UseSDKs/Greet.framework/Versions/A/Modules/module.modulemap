@@ -1,0 +1,4 @@
+framework module Greet {
+  header "Greet-Swift.h"
+  requires objc
+}

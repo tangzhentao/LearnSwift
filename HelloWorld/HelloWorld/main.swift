@@ -359,7 +359,11 @@ Functions().learn()
 //
 //MemorySafety().learn()
 
-AccessControl().learn()
+//AccessControl().learn()
+
+//AdvancedOperators().learn()
+
+UseSDKs().learn()
 
 
 

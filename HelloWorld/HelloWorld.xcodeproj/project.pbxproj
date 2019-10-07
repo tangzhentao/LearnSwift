@@ -29,11 +29,14 @@
 		24645869232B3A75009E3E2A /* RectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24645868232B3A75009E3E2A /* RectExtension.swift */; };
 		2464587E232B45BB009E3E2A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464587D232B45BB009E3E2A /* Extension.swift */; };
 		24645880232CD63C009E3E2A /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464587F232CD63C009E3E2A /* Protocols.swift */; };
+		246E4E6A2342496B00259F47 /* AdvancedOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E4E692342496B00259F47 /* AdvancedOperators.swift */; };
 		247450C82302444800D756E4 /* StructuresAndClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247450C72302444800D756E4 /* StructuresAndClasses.swift */; };
 		2488E92B233AFF3F0057FFFB /* ARC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2488E92A233AFF3F0057FFFB /* ARC.swift */; };
 		2490C22B2327342200C72CE0 /* TypeCasting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2490C22A2327342200C72CE0 /* TypeCasting.swift */; };
+		24A08A8D23446111009ED5D0 /* UseSDKs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A08A8C23446111009ED5D0 /* UseSDKs.swift */; };
 		24B05EC122F91271008027A1 /* ControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B05EC022F91271008027A1 /* ControlFlow.swift */; };
 		24BDDF952331D1130056AB3A /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BDDF942331D1130056AB3A /* DoubleExtension.swift */; };
+		24BEF49E234629A300B01B34 /* Greet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BEF49D234629A300B01B34 /* Greet.framework */; };
 		24CF39C523330953004367A0 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CF39C423330953004367A0 /* Generics.swift */; };
 		24D3AAAB2328739E00D52145 /* NestedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3AAAA2328739E00D52145 /* NestedTypes.swift */; };
 		24D3AAAD23287BDE00D52145 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3AAAC23287BDE00D52145 /* Extensions.swift */; };
@@ -78,11 +81,15 @@
 		24645868232B3A75009E3E2A /* RectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectExtension.swift; sourceTree = "<group>"; };
 		2464587D232B45BB009E3E2A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		2464587F232CD63C009E3E2A /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		246E4E692342496B00259F47 /* AdvancedOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedOperators.swift; sourceTree = "<group>"; };
 		247450C72302444800D756E4 /* StructuresAndClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuresAndClasses.swift; sourceTree = "<group>"; };
 		2488E92A233AFF3F0057FFFB /* ARC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARC.swift; sourceTree = "<group>"; };
 		2490C22A2327342200C72CE0 /* TypeCasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCasting.swift; sourceTree = "<group>"; };
+		24A08A8C23446111009ED5D0 /* UseSDKs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseSDKs.swift; sourceTree = "<group>"; };
+		24A08A8F2344615D009ED5D0 /* libHello.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHello.a; path = "../../../Library/Developer/Xcode/DerivedData/Hello-fxmwnqgcjbjbwlgdoqvfopjmcsdt/Build/Products/Debug-iphonesimulator/libHello.a"; sourceTree = "<group>"; };
 		24B05EC022F91271008027A1 /* ControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlFlow.swift; sourceTree = "<group>"; };
 		24BDDF942331D1130056AB3A /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		24BEF49D234629A300B01B34 /* Greet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Greet.framework; sourceTree = "<group>"; };
 		24CF39C423330953004367A0 /* Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
 		24D3AAAA2328739E00D52145 /* NestedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedTypes.swift; sourceTree = "<group>"; };
 		24D3AAAC23287BDE00D52145 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -96,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24BEF49E234629A300B01B34 /* Greet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +115,7 @@
 			children = (
 				2431B27622C727BB00D8CD1C /* HelloWorld */,
 				2431B27522C727BB00D8CD1C /* Products */,
+				24A08A8E2344615D009ED5D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +157,8 @@
 				24E868A0233C908B00D6D02F /* MemorySafety.swift */,
 				241B01FF233EEE2C003DA84E /* AccessControl.swift */,
 				241B0201233EF712003DA84E /* AccessControl2.swift */,
+				246E4E692342496B00259F47 /* AdvancedOperators.swift */,
+				24A08A8B234460EB009ED5D0 /* UseSDKs */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -164,6 +175,23 @@
 				24F357552310F0080071122E /* Deinitialization.swift */,
 			);
 			path = StructuresAndClasses;
+			sourceTree = "<group>";
+		};
+		24A08A8B234460EB009ED5D0 /* UseSDKs */ = {
+			isa = PBXGroup;
+			children = (
+				24BEF49D234629A300B01B34 /* Greet.framework */,
+				24A08A8C23446111009ED5D0 /* UseSDKs.swift */,
+			);
+			path = UseSDKs;
+			sourceTree = "<group>";
+		};
+		24A08A8E2344615D009ED5D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24A08A8F2344615D009ED5D0 /* libHello.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +257,7 @@
 				24E868A1233C908B00D6D02F /* MemorySafety.swift in Sources */,
 				24645880232CD63C009E3E2A /* Protocols.swift in Sources */,
 				24645867232B37A9009E3E2A /* Rect.swift in Sources */,
+				24A08A8D23446111009ED5D0 /* UseSDKs.swift in Sources */,
 				2451659C22F09409001BE681 /* BasicOperators.swift in Sources */,
 				24F357562310F0080071122E /* Deinitialization.swift in Sources */,
 				2418A8662308FF5D00594652 /* Inheritance.swift in Sources */,
@@ -248,6 +277,7 @@
 				24D3AAAD23287BDE00D52145 /* Extensions.swift in Sources */,
 				2401FDA322FAB4310033E115 /* Functions.swift in Sources */,
 				2464587E232B45BB009E3E2A /* Extension.swift in Sources */,
+				246E4E6A2342496B00259F47 /* AdvancedOperators.swift in Sources */,
 				2429A67A22EDFD8C00E181FF /* SwiftTour.swift in Sources */,
 				244B9C1222F5D0420097B990 /* StringsAndCharacters.swift in Sources */,
 				241B0202233EF712003DA84E /* AccessControl2.swift in Sources */,
@@ -381,6 +411,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HelloWorld/UseSDKs",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HelloWorld/UseSDKs",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -390,6 +428,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HelloWorld/UseSDKs",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HelloWorld/UseSDKs",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
