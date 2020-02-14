@@ -1,3 +1,5 @@
+//: [上一页](@previous)
+
 import UIKit
 
 var str = "Hello, playground"

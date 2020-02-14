@@ -1,11 +1,7 @@
-//: [Previous](@previous)
 
 import Foundation
 
 var str = "Hello, playground"
-
-//: [Next](@next)
-
 
 // 单行注释
 
@@ -34,3 +30,7 @@ var str = "Hello, playground"
 **注意**
  markup只在playground中有效
  */
+
+
+//: [上一页](@previous)
+//: [下一页](@next)
