@@ -9,5 +9,6 @@
         <page name='04-02 函数类型'/>
         <page name='分析推断题'/>
         <page name='05-01 枚举'/>
+        <page name='05-02 MemoryLayout'/>
     </pages>
 </playground>

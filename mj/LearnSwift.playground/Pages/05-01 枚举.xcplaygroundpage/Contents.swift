@@ -111,6 +111,10 @@ enum Grade: String {
 }
 var grade = Grade.perfect
 print(grade, grade.rawValue)
+var g1 = Grade(rawValue: "B")
+if let g = g1 {
+    print(g, g.rawValue)
+}
 
 /* 隐式原始值 */
 enum Weekday: Int {
