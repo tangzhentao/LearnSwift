@@ -7,5 +7,7 @@
         <page name='03-01 流程控制'/>
         <page name='04-01 函数'/>
         <page name='04-02 函数类型'/>
+        <page name='分析推断题'/>
+        <page name='05-01 枚举'/>
     </pages>
 </playground>
