@@ -105,4 +105,32 @@ case .test5:
     print("test5")
 }
 
+/* 进一步观察下面枚举的内存布局 */
+
+// 没看懂
+enum TestEnum1 {
+    case test0
+    case test1
+    case test2
+    case test3(Int)
+    case test4(Int, Int)
+    case test5(Int, Int, Int, Bool)
+}
+
+var testEnum1 = TestEnum1.test0 // 0  0  0 c0
+print("TestEnum1 size:", MemoryLayout.size(ofValue: testEnum1)) // 26
+print("TestEnum1 stride:", MemoryLayout.stride(ofValue: testEnum1)) // 32
+print("TestEnum1 alignment:", MemoryLayout.alignment(ofValue: testEnum1)) // 8
+
+var testEnum1Ptr = withUnsafePointer(to: &testEnum1) { (p) -> UnsafePointer<TestEnum1> in
+    p
+}
+print("testEnum1Ptr:", testEnum1Ptr)
+testEnum1 = TestEnum1.test1//  01 0  0  c0
+testEnum1 = TestEnum1.test2 // 02   c0
+testEnum1 = TestEnum1.test3(1) // 01 0  0   0
+testEnum1 = TestEnum1.test4(2, 3) // 02 03 0 40
+testEnum1 = TestEnum1.test5(4, 5, 6, true) // 4  5 6 81
+testEnum1 = TestEnum1.test5(4, 5, 6, false) // 4  5 6 80
+
 print("end")

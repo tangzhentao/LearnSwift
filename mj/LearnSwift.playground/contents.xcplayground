@@ -10,5 +10,6 @@
         <page name='分析推断题'/>
         <page name='05-01 枚举'/>
         <page name='05-02 MemoryLayout'/>
+        <page name='06-01 可选项'/>
     </pages>
 </playground>
