@@ -10,6 +10,9 @@
         <page name='分析推断题'/>
         <page name='05-01 枚举'/>
         <page name='05-02 MemoryLayout'/>
-        <page name='06-01 可选项'/>
+        <page name='07-01 可选项'/>
+        <page name='08-01 结构体和类1'/>
+        <page name='09-01 class_getInstanceSize'/>
+        <page name='10-01 闭包'/>
     </pages>
 </playground>
