@@ -15,5 +15,5 @@ var add = {
     print("hello")
     return a + b
 }
-add(1, 2)
+let _ = add(1, 2)
 
