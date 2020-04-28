@@ -8,6 +8,8 @@
 
 import Foundation
 
+print("02")
+
 func getFn() -> (Int) -> Int {
     var num = 6
 
@@ -19,7 +21,9 @@ func getFn() -> (Int) -> Int {
     return add
 }
 
-var addFn = getFn()
+let addFn = getFn()
+addFn(1)
+//print(addFn(8))
 //print("addFn size:", MemoryLayout.stride(ofValue: addFn))
 
 //func plus(a: Int) -> Int {
@@ -30,21 +34,7 @@ var addFn = getFn()
 //let plusFn = plus
 //print("plusFn size:", MemoryLayout.stride(ofValue: plusFn)) // 16
 //plusFn(1)
-let reuslt = 1
+//let reuslt = 1
 
-
-
-/*
- 0x100000ef0 <+0>:  pushq  %rbp
-     0x100000ef1 <+1>:  movq   %rsp, %rbp
-     0x100000ef4 <+4>:  movq   $0x0, -0x8(%rbp)
- ->  0x100000efc <+12>: leaq   0xd(%rip), %rax           ; add #1 (a: Swift.Int) -> Swift.Int in _0_02_Closures.getFn() -> (Swift.Int) -> Swift.Int at main.swift:16
-     0x100000f03 <+19>: xorl   %ecx, %ecx
-     0x100000f05 <+21>: movl   %ecx, %edx
-     0x100000f07 <+23>: popq   %rbp
-     0x100000f08 <+24>: retq
- 
- 
- */
 
 

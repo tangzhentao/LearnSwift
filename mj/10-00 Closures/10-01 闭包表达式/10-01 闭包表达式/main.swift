@@ -8,7 +8,7 @@
 
 import Foundation
 
-print("Hello, World!")
+print("01")
 
 var add = {
     (a: Int, b: Int) -> Int in
