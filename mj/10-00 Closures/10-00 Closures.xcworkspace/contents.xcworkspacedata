@@ -19,4 +19,13 @@
    <FileRef
       location = "group:06 2ClosuresCapture2Var/06 2ClosuresCapture2Var.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:07 ClosuresInForLoop/07 ClosuresInForLoop.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:08 ClosuresInout/08 ClosuresInout.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:09 Autoclosures/09 Autoclosures.xcodeproj">
+   </FileRef>
 </Workspace>
