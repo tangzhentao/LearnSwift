@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:01 Stored_Computed_Properties/01 Stored_Computed_Properties.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:02 PropertyObservers/02 PropertyObservers.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:03 inout&#x672c;&#x8d28;/03 inout&#x672c;&#x8d28;.xcodeproj">
+   </FileRef>
+</Workspace>
