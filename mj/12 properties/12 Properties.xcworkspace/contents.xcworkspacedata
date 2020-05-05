@@ -10,4 +10,13 @@
    <FileRef
       location = "group:03 inout&#x672c;&#x8d28;/03 inout&#x672c;&#x8d28;.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:04 ClassProperties/04 ClassProperties.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:05 Singleton/05 Singleton.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:06 &#x5b58;&#x50a8;&#x7c7b;&#x578b;&#x5c5e;&#x6027;&#x672c;&#x8d28;/06 &#x5b58;&#x50a8;&#x7c7b;&#x578b;&#x5c5e;&#x6027;&#x672c;&#x8d28;.xcodeproj">
+   </FileRef>
 </Workspace>
