@@ -19,4 +19,7 @@
    <FileRef
       location = "group:06 override_instance_properties/06 override_instance_properties.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:07 properties_observer/07 properties_observer.xcodeproj">
+   </FileRef>
 </Workspace>
