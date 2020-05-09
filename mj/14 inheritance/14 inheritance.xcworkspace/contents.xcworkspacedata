@@ -13,4 +13,10 @@
    <FileRef
       location = "group:03 &#x591a;&#x6001;/../04 override_type_method/04 override_type_method.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:05 override_instance_properties/05 override_instance_properties.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:06 override_instance_properties/06 override_instance_properties.xcodeproj">
+   </FileRef>
 </Workspace>

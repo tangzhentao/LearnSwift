@@ -24,8 +24,8 @@ class Animal {
 }
 
 class Dog: Animal {
-    class func speak(index: Int) {
-//        super.speak()
+    override class func speak() {
+        super.speak()
         print("dog speak")
 
     }
