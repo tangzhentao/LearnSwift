@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:01 designated_convenience_init/01 designated_convenience_init.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:02 auto_initializer_inheritance/02 auto_initializer_inheritance.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:03 properties_observer/03 properties_observer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:04 failable_initializer/04 failable_initializer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:06 deinitialization/06 deinitialization.xcodeproj">
+   </FileRef>
+</Workspace>
