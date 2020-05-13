@@ -7,4 +7,34 @@
    <FileRef
       location = "group:02 init_in_protocol/02 init_in_protocol.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:03 init_init?_init!_in_protocol/03 init_init?_init!_in_protocol.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:04 protocol_inheritance/04 protocol_inheritance.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:05 protocol_composition/05 protocol_composition.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:06 CaseIterable/06 CaseIterable.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:07 CustomStringConvertible/07 CustomStringConvertible.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:08 Any_AnyObject/08 Any_AnyObject.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:09 is_as/09 is_as.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:10 class.self_class.Type_AnyClass/10 class.self_class.Type_AnyClass.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:11 Self/11 Self.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:12 other/12 other.xcodeproj">
+   </FileRef>
 </Workspace>
