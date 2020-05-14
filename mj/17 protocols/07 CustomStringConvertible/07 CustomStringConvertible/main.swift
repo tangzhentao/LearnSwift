@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Person: CustomStringConvertible {
+class Person: CustomStringConvertible, CustomDebugStringConvertible {
     var age = 0
     var name = ""
     
@@ -20,7 +20,12 @@ class Person: CustomStringConvertible {
     var description: String {
         return "person: \(name), \(age) years old."
     }
+    
+    var debugDescription: String {
+        return "debug-person: \(name), \(age) years old."
+    }
 }
 
 let jim =  Person(age: 8, name: "jim")
-print(jim)
+print(jim) // person: jim, 8 years old.
+debugPrint(jim) // debug-person: jim, 8 years old.

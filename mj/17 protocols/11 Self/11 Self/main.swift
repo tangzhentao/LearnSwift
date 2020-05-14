@@ -13,6 +13,7 @@ protocol Runable {
 }
 
 class Animal: Runable {
+    var age = 0
     required init () {
         
     }
@@ -22,7 +23,12 @@ class Animal: Runable {
 }
 
 class Dog: Animal {
+    static var count = 0
     
+    func show() {
+        print(self.age)
+        print(Self.count)
+    }
 }
 
 let animal = Animal()

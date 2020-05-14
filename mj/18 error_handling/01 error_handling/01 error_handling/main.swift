@@ -8,8 +8,6 @@
 
 import Foundation
 
-print("Hello, World!")
-
 enum CalculateError: Error {
     case zero(String)
     case overfloat

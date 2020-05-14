@@ -4,4 +4,19 @@
    <FileRef
       location = "group:01 error_handling/01 error_handling.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:02 try?_try!/02 try?_try!.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:03 rethrows/03 rethrows.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:04 defer/04 defer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:05 assert/05 assert.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:06 fatalError/06 fatalError.xcodeproj">
+   </FileRef>
 </Workspace>
