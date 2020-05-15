@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:01 generics/01 generics.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:02 Associated_Type/02 Associated_Type.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:03 Type_Constraints/03 Type_Constraints.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:04 protocol_as_type/04 protocol_as_type.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:04 Opaque_Types/04 Opaque_Types.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:06 &#x53ef;&#x9009;&#x9879;&#x7684;&#x672c;&#x8d28;&#x3001;/06 &#x53ef;&#x9009;&#x9879;&#x7684;&#x672c;&#x8d28;&#x3001;.xcodeproj">
+   </FileRef>
+</Workspace>
