@@ -59,6 +59,27 @@ func getLive() -> some Living {
     return Cat()
 }
 
+// 函数返回的协议类型对象，可以为参数类型为协议类型的实参
+protocol Living {
+    func breathe()
+}
+
+class Cat: Living {
+    func breathe() {
+        print("cat breathe")
+    }
+}
+
+func handleLiving(living: Living) -> Living {
+    living.breathe()
+    return living
+}
+
+let cat = Cat()
+let l = handleLiving(living: cat)
+let l2 = handleLiving(living: l)
+l2.breathe()
+
 
 
 
