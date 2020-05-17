@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:01 overflow_operator/01 overflow_operator.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:02 operator_overload/02 operator_overload.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:03 Equatable/03 Equatable.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:04 Comparable/04 Comparable.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:05 custom_operator/05 custom_operator.xcodeproj">
+   </FileRef>
+</Workspace>
