@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:01 memory_management/01 memory_management.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:02 strong_seference_cycles/02 strong_seference_cycles.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:03 debug_reference_count/03 debug_reference_count.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:04 escaping_closures/04 escaping_closures.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:05 conflicting_asscess_to_memory/05 conflicting_asscess_to_memory.xcodeproj">
+   </FileRef>
+</Workspace>
