@@ -1,0 +1,11 @@
+framework module Human {
+  umbrella header "Human.h"
+
+  export *
+  module * { export * }
+}
+
+module Human.Swift {
+    header "Human-Swift.h"
+    requires objc
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:01 access_control/01 access_control.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:02 private/02 private.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:03 getter_setter/03 getter_setter.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:04 init/04 init.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Human/Human.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:05 enum/05 enum.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:06 protocol/06 protocol.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:07 extension/07 extension.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:08 class_method_var/08 class_method_var.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:09 local_scope/09 local_scope.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:10 override/10 override.xcodeproj">
+   </FileRef>
+</Workspace>
