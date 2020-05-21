@@ -4,4 +4,13 @@
    <FileRef
       location = "group:01 pointer/01 pointer.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:02 pointer_variable/02 pointer_variable.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:03 create_pointer/03 create_pointer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:04 pointer_cast/04 pointer_cast.xcodeproj">
+   </FileRef>
 </Workspace>
