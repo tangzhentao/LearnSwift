@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:01 extension/01 extension.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:02 protocol_init/02 protocol_init.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:04 extension_protocol/04 extension_protocol.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:05 extension_generics/05 extension_generics.xcodeproj">
+   </FileRef>
+</Workspace>
