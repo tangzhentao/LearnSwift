@@ -67,3 +67,39 @@ var cat: Cat = 2
 cat.show()
 cat = "tom"
 cat.show()
+
+struct Point {
+    var x = 0.0
+    var y = 0.0
+}
+
+// 把协议放在扩展中，让编译器继续为我们生产默认初始化器
+extension Point: ExpressibleByArrayLiteral, ExpressibleByDictionaryLiteral {
+    init(arrayLiteral elements: Double...) {
+        guard elements.count > 0 else {
+            return
+        }
+        x = elements[0]
+        guard elements.count > 1 else {
+            return
+        }
+        y = elements[1]
+    }
+    init(dictionaryLiteral elements: (String, Double)...) { // 参数是个元祖为元素的数组，却不是字典，奇怪
+        for (key, value) in elements {
+            if key == "x" {
+                x = value
+            } else if key == "y" {
+                y = value
+            }
+        }
+    }
+}
+
+var p = Point()
+p = Point(x: 2, y: 3)
+print(p)
+p = [4, 5]
+print(p)
+p = ["x": 10, "y": 20]
+print(p)

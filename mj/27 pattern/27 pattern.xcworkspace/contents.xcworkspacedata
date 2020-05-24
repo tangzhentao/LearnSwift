@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:01 pattern/01 pattern.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:02 expression_pattern/02 expression_pattern.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:02 expression_pattern/02 expression_pattern/../../03 custom_expression_pattern/03 custom_expression_pattern.xcodeproj">
+   </FileRef>
+</Workspace>
