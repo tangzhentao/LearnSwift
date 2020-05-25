@@ -10,4 +10,10 @@
    <FileRef
       location = "group:02 expression_pattern/02 expression_pattern/../../03 custom_expression_pattern/03 custom_expression_pattern.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:04 complex_expression_pattern/04 complex_expression_pattern.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:05 where/05 where.xcodeproj">
+   </FileRef>
 </Workspace>

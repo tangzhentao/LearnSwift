@@ -38,3 +38,29 @@ default:
     break
 }
 
+/*
+ ##### 自定义表达式模式：奇数偶数判断
+ */
+
+func isOdd(_ num: Int) -> Bool { num % 2 == 1}
+func isEven(_ num: Int) -> Bool { num % 2 == 0}
+
+extension Int {
+    static func ~= (pattern: (Int)->Bool, value: Int) -> Bool {
+        pattern(value)
+    }
+}
+
+func checkOddEven(_ num: Int) {
+    switch num {
+    case isOdd:
+        print(num, "是个奇数")
+    case isEven:
+        print(num, "是个偶数")
+    default:
+        break
+    }
+}
+
+checkOddEven(1)
+checkOddEven(2)
