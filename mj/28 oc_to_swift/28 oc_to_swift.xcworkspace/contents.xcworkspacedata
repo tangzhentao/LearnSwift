@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:01 mark/01 mark.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:02 conditional_compilation/02 conditional_compilation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:03 log/03 log.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:04 available_OS/04 available_OS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:05 api_available/05 api_available.xcodeproj">
+   </FileRef>
+</Workspace>
