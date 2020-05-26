@@ -16,4 +16,7 @@
    <FileRef
       location = "group:05 api_available/05 api_available.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:06 program_entry/06 program_entry.xcodeproj">
+   </FileRef>
 </Workspace>

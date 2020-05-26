@@ -28,7 +28,7 @@ class Cat {
         fatalError() // 函数体还不打算实现，又想编译不报错，用这个致命错误
     }
     func play() {
-        #warning("想好了，快来实现")
+        #warning("警告：想好了，快来实现")
     }
 }
 // MARK: - 对的，确实头上有根线
