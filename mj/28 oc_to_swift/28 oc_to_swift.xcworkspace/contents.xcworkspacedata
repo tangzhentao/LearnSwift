@@ -19,4 +19,10 @@
    <FileRef
       location = "group:06 program_entry/06 program_entry.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:07 swift_call_oc/07 swift_call_oc.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:08 oc_call_swift/08 oc_call_swift.xcodeproj">
+   </FileRef>
 </Workspace>
