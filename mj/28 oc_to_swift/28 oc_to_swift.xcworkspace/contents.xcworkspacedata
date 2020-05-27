@@ -28,4 +28,7 @@
    <FileRef
       location = "group:09 string/09 string.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:10 string_2/10 string_2.xcodeproj">
+   </FileRef>
 </Workspace>
