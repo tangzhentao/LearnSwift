@@ -25,4 +25,7 @@
    <FileRef
       location = "group:08 oc_call_swift/08 oc_call_swift.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:09 string/09 string.xcodeproj">
+   </FileRef>
 </Workspace>

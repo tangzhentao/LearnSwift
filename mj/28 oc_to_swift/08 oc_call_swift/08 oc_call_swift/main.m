@@ -32,6 +32,15 @@
  要继承它的方法
  - Swift调用OC和反过来都是如何调用的
  消息机制
+ 
+ #### Swift、OC互调时函数时如何调用的
+ - 在`Swift`中调用`OC`方法，走的是runtime消息机制
+ - 在`OC`中调用`Swift`方法，走的也是runtime消息机制
+ - 在`Swift`中调用`Swift`方法，走的是虚表机制，即使这个方法被暴露给`OC`了
+ 也即是说，同一个方法在OC中调用和在`Swift`中调用走的是不同的调用机制,
+ 在`Swift`中调用`Swift`方法走的永远都是虚表机制.
+ - 有个暴露给OC的方法，如果在`Swift`中调用它时想走runtime消息机制，需要在方法前添加`dynamic`关键字
+ 注意：如果不是暴露给OC的方法，添加`dynamic`关键字没有效果
  */
 
 int main(int argc, const char * argv[]) {
@@ -45,6 +54,8 @@ int main(int argc, const char * argv[]) {
         NSString *band = car.band;
 //        double price = car.price;
         [car testSelector];
+        
+        [car autoDrive];
         
     }
     return 0;

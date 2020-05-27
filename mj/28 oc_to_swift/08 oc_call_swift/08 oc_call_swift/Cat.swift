@@ -25,6 +25,17 @@ class Car: NSObject {
     @objc static func run () {
         print("car run")
     }
+    
+    /*
+     ##### 调用机制
+     同一个方法，如果在OC中调用，则使用的是runtime的消息机制，如果是在Swift中调用，则使用的是虚表机制
+     如果想在Swift中调用时也走runtime消息机制，则需要在方法前加上关键字`dynamic`
+     */
+    /* dynamic */ func autoDrive() {
+        let speed = 10
+        let time = 10
+        let _ = speed * time
+    }
 }
 
 extension Car {
@@ -49,5 +60,7 @@ extension Car {
         perform(#selector(test2(x:y:)))
         perform(#selector(test2(a:b:)))
         perform(#selector(test2 as (Double, Double)->Void))
+        
+        self.autoDrive()
     }
 }

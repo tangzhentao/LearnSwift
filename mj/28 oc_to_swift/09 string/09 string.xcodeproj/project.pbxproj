@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		756F22EC247D49620038DAC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 756F22EB247D49620038DAC7 /* main.m */; };
-		756F22F4247D49B10038DAC7 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F22F3247D49B10038DAC7 /* Cat.swift */; };
+		7568E439247E006D00007177 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7568E438247E006D00007177 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		756F22E6247D49620038DAC7 /* CopyFiles */ = {
+		7568E433247E006D00007177 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,13 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		756F22E8247D49620038DAC7 /* 08 oc_call_swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "08 oc_call_swift"; sourceTree = BUILT_PRODUCTS_DIR; };
-		756F22EB247D49620038DAC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		756F22F3247D49B10038DAC7 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		7568E435247E006D00007177 /* 09 string */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "09 string"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7568E438247E006D00007177 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		756F22E5247D49620038DAC7 /* Frameworks */ = {
+		7568E432247E006D00007177 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,67 +38,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		756F22DF247D49620038DAC7 = {
+		7568E42C247E006D00007177 = {
 			isa = PBXGroup;
 			children = (
-				756F22EA247D49620038DAC7 /* 08 oc_call_swift */,
-				756F22E9247D49620038DAC7 /* Products */,
+				7568E437247E006D00007177 /* 09 string */,
+				7568E436247E006D00007177 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		756F22E9247D49620038DAC7 /* Products */ = {
+		7568E436247E006D00007177 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				756F22E8247D49620038DAC7 /* 08 oc_call_swift */,
+				7568E435247E006D00007177 /* 09 string */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		756F22EA247D49620038DAC7 /* 08 oc_call_swift */ = {
+		7568E437247E006D00007177 /* 09 string */ = {
 			isa = PBXGroup;
 			children = (
-				756F22EB247D49620038DAC7 /* main.m */,
-				756F22F3247D49B10038DAC7 /* Cat.swift */,
+				7568E438247E006D00007177 /* main.swift */,
 			);
-			path = "08 oc_call_swift";
+			path = "09 string";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		756F22E7247D49620038DAC7 /* 08 oc_call_swift */ = {
+		7568E434247E006D00007177 /* 09 string */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 756F22EF247D49620038DAC7 /* Build configuration list for PBXNativeTarget "08 oc_call_swift" */;
+			buildConfigurationList = 7568E43C247E006D00007177 /* Build configuration list for PBXNativeTarget "09 string" */;
 			buildPhases = (
-				756F22E4247D49620038DAC7 /* Sources */,
-				756F22E5247D49620038DAC7 /* Frameworks */,
-				756F22E6247D49620038DAC7 /* CopyFiles */,
+				7568E431247E006D00007177 /* Sources */,
+				7568E432247E006D00007177 /* Frameworks */,
+				7568E433247E006D00007177 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "08 oc_call_swift";
-			productName = "08 oc_call_swift";
-			productReference = 756F22E8247D49620038DAC7 /* 08 oc_call_swift */;
+			name = "09 string";
+			productName = "09 string";
+			productReference = 7568E435247E006D00007177 /* 09 string */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		756F22E0247D49620038DAC7 /* Project object */ = {
+		7568E42D247E006D00007177 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = void;
 				TargetAttributes = {
-					756F22E7247D49620038DAC7 = {
+					7568E434247E006D00007177 = {
 						CreatedOnToolsVersion = 11.4.1;
-						LastSwiftMigration = 1140;
 					};
 				};
 			};
-			buildConfigurationList = 756F22E3247D49620038DAC7 /* Build configuration list for PBXProject "08 oc_call_swift" */;
+			buildConfigurationList = 7568E430247E006D00007177 /* Build configuration list for PBXProject "09 string" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,30 +105,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 756F22DF247D49620038DAC7;
-			productRefGroup = 756F22E9247D49620038DAC7 /* Products */;
+			mainGroup = 7568E42C247E006D00007177;
+			productRefGroup = 7568E436247E006D00007177 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				756F22E7247D49620038DAC7 /* 08 oc_call_swift */,
+				7568E434247E006D00007177 /* 09 string */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		756F22E4247D49620038DAC7 /* Sources */ = {
+		7568E431247E006D00007177 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				756F22F4247D49B10038DAC7 /* Cat.swift in Sources */,
-				756F22EC247D49620038DAC7 /* main.m in Sources */,
+				7568E439247E006D00007177 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		756F22ED247D49620038DAC7 /* Debug */ = {
+		7568E43A247E006D00007177 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -186,10 +182,12 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		756F22EE247D49620038DAC7 /* Release */ = {
+		7568E43B247E006D00007177 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,38 +235,25 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
-		756F22F0247D49620038DAC7 /* Debug */ = {
+		7568E43D247E006D00007177 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "08 oc_call_swift/08 oc_call_swift-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		756F22F1247D49620038DAC7 /* Release */ = {
+		7568E43E247E006D00007177 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "08 oc_call_swift/08 oc_call_swift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -276,25 +261,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		756F22E3247D49620038DAC7 /* Build configuration list for PBXProject "08 oc_call_swift" */ = {
+		7568E430247E006D00007177 /* Build configuration list for PBXProject "09 string" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				756F22ED247D49620038DAC7 /* Debug */,
-				756F22EE247D49620038DAC7 /* Release */,
+				7568E43A247E006D00007177 /* Debug */,
+				7568E43B247E006D00007177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		756F22EF247D49620038DAC7 /* Build configuration list for PBXNativeTarget "08 oc_call_swift" */ = {
+		7568E43C247E006D00007177 /* Build configuration list for PBXNativeTarget "09 string" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				756F22F0247D49620038DAC7 /* Debug */,
-				756F22F1247D49620038DAC7 /* Release */,
+				7568E43D247E006D00007177 /* Debug */,
+				7568E43E247E006D00007177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 756F22E0247D49620038DAC7 /* Project object */;
+	rootObject = 7568E42D247E006D00007177 /* Project object */;
 }
