@@ -31,4 +31,16 @@
    <FileRef
       location = "group:10 string_2/10 string_2.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:11 other/11 other.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:12 associated_object/12 associated_object.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:13 resources_management/13 resources_management.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:14 threads/14 threads.xcodeproj">
+   </FileRef>
 </Workspace>
