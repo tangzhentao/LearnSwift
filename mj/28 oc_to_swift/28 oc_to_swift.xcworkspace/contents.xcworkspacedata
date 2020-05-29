@@ -43,4 +43,13 @@
    <FileRef
       location = "group:14 threads/14 threads.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:15 escaping_block/15 escaping_block.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:16 dispatch_once/16 dispatch_once.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:17 lock/17 lock.xcodeproj">
+   </FileRef>
 </Workspace>
