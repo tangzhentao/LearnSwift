@@ -4,4 +4,10 @@
    <FileRef
       location = "group:01 network_protocol/01 network_protocol.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:01 network_protocol/../02 elegant_prefix/02 elegant_prefix.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:03  check_type_by_protocol/03  check_type_by_protocol.xcodeproj">
+   </FileRef>
 </Workspace>
